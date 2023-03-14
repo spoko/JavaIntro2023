@@ -24,15 +24,17 @@ public class MyFirstClass {
 
         int userAge = scanner.nextInt();
 
-        if (userAge < 0){
+        if (userAge < 0) {
             System.out.println("Invalid data!");
             return;
         }
 
-        if (userAge < 18){
+        if (userAge < 18) {
             System.out.println(userName + " is not allowed to drink!");
-        }else{
+        } else {
             System.out.println("Cheers, " + userName);
         }
+        StringAttaching someString = new StringAttaching();
     }
+
 }
