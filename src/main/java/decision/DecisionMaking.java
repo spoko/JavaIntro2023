@@ -11,7 +11,9 @@ public class DecisionMaking {
         printUserDetails(35);
         //missing some tests
         printUserDetails(131);
-        //todo add more
+
+        printMonthOfTheYear(2);
+
     }
 
     public static void printUserDetails(int age){
@@ -36,5 +38,16 @@ public class DecisionMaking {
         }
     }
 
-    ///
+    public static void printMonthOfTheYear(int month){
+        switch (month){
+            case 1:
+                System.out.printf("The selected month is: January\n");
+                break;
+            case 2:
+                System.out.printf("The selected month is: February\n");
+                break;
+            default:
+                System.out.printf("Incorrect value!\n");
+        }
+    }
 }
