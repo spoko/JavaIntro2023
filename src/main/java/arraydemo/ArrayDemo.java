@@ -4,10 +4,17 @@ public class ArrayDemo {
 
     public static void main(String[] args) {
         String text = "Some random text blah blah blah";
-        int [] numbers = {5, 12, 3, 6};
+        int [] numbers = {5, 12, 3, 6, 56, 654};
         String [] cities = {"Sofia", "Plovdiv", "Burgas", "Varna", "Vratsa"};
         String [] words = text.split(" ");
         char[] mustHavePasswordSymbols = {'#', '%', '*'};
+
+        int [][] matrix = {
+                {3, 5, 8},
+                {5, 78, 90, 99, 10},
+                {78, 2},
+                {0, 18, 33}
+        };
 
         int [] defaultValues = new int[10];
 
@@ -15,7 +22,7 @@ public class ArrayDemo {
         defaultValues[0] = 5;
 
         //printing one exact value at first position
-        System.out.println(defaultValues[0]);
+        System.out.println(defaultValues);
 
         //printing all array values for defaultValues:
         for (int i = 0; i < defaultValues.length; i++) {
@@ -33,5 +40,22 @@ public class ArrayDemo {
             System.out.printf("Word on position %d is: %s\n", i, words[i]);
         }
 
+        //printing with for each - cities:
+        System.out.println("---------------------");
+        for (String city : cities ){
+            System.out.printf("Current city is: %s\n", city);
+        }
+
+        System.out.println("---------------------");
+        for (int number : numbers){
+            System.out.printf("Current value is: %d\n", number);
+        }
+
+        System.out.println("---------------------");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.printf("Element on row %d and column %d is: %d\n", i, j, matrix[i][j]);
+            }
+        }
     }
 }
