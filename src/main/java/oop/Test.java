@@ -25,5 +25,13 @@ public class Test {
 
         patchi.eat();
         patchi.equals(sharka);//equal method is from Object class
+        Dog dog2 = new Dog("Sharo");
+
+        Dog dog3 = getADog();
+    }
+
+    //factory method
+    public static Dog getADog(){
+        return new Dog();
     }
 }

@@ -23,6 +23,10 @@ public class Dog extends Pet {
 
     }
 
+    public Dog(String name){
+        super(name);
+    }
+
     //method - actions that any future objects that will be created can do
     public void bark(){
         System.out.println(super.getName() + " is barking!");//super is accessing stuff from the parent class
@@ -36,4 +40,6 @@ public class Dog extends Pet {
     public void eat(){
         System.out.println(super.getName() + " is eating fast!");
     }
+
+
 }

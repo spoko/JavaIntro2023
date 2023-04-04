@@ -95,12 +95,17 @@ public class Pet extends AbstractDemo {
 
     //constructor
     public Pet(Breed breed, String sex, float weight, String name, byte age, String color){
+        //this.breed = breed;
         setBreed(breed);
         setSex(sex);
         setWeight(weight);
         setName(name);
         setAge(age);
         setColor(color);
+    }
+
+    public Pet(String name){
+        setName(name);
     }
 
     //default constructor
