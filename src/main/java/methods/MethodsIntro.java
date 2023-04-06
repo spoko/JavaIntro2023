@@ -1,5 +1,8 @@
 package methods;
 
+import oop.Dog;
+import oop.Pet;
+
 import java.util.Scanner;
 
 public class MethodsIntro {
@@ -27,6 +30,9 @@ public class MethodsIntro {
         System.out.println(sum(3,5,6));
         //calling a method:
         sum(5,10);
+
+        Dog sharo = getPet("Sharo");
+        Pet somePet = getPet("Pisana");
     }
 
     //method which will not return anything
@@ -52,6 +58,10 @@ public class MethodsIntro {
     public static int sum(int a, int b, int c){
         int sum = a + b + c;
         return sum;
+    }
+
+    public static Dog getPet(String petName){
+        return new Dog(petName);
     }
 
 }

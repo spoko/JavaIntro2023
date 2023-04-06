@@ -28,9 +28,9 @@ public class Pet extends AbstractDemo {
         return sex;
     }
 
-    public void setSex(String sex) {
-        if (!sex.isEmpty()){
-            this.sex = sex;
+    public void setSex(String enteredSex) {
+        if (!enteredSex.isEmpty()){
+            sex = enteredSex;
         }else {
             System.out.println("Error: sex is mandatory");
         }

@@ -14,7 +14,7 @@ public class Dog extends Pet {
 
     //constructor with parameters
     public Dog(Breed breed, String sex, float weight, String name, byte age, String color, boolean hasTail) {
-        super(breed, sex, weight, name, age, color); //calling the constructor of the parent class
+        super(breed, sex, weight, name, age, color); //calling the constructor of the parent class (calling Pet constructor)
         setHasTail(hasTail);
     }
 
@@ -23,6 +23,7 @@ public class Dog extends Pet {
 
     }
 
+    //constructor with parameter
     public Dog(String name){
         super(name);
     }
