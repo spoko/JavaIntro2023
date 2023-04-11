@@ -55,9 +55,24 @@ public class Person {
 
         String itemNames = "";
         for (Product product : bagOfProducts){
-            itemNames += product.getName();
+            if (bagOfProducts.size() > 1){
+                itemNames += product.getName() + ", ";
+            }else {
+                itemNames += product.getName();
+            }
+        }
+
+        if (bagOfProducts.size() > 1){
+            itemNames = trimResult(itemNames);
         }
 
         System.out.printf("%s - %s\n", this.getName(), itemNames);
+    }
+
+    //internal method
+    private String trimResult(String result){
+        result = result.trim();//remove the space at the end
+        result = result.substring(0, result.length() - 1); // removes the , at the end
+        return result;
     }
 }
