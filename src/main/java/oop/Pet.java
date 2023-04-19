@@ -105,6 +105,7 @@ public class Pet extends AbstractDemo {
     }
 
     public Pet(String name){
+        super(name);//
         setName(name);
     }
 
@@ -127,6 +128,11 @@ public class Pet extends AbstractDemo {
     @Override
     public void speak() {
         System.out.println(this.name + " is speaking...");
+    }
+
+    @Override
+    public void sleep() {
+
     }
 
     @Override

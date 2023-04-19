@@ -3,6 +3,8 @@ package oop;
 public class Test {
 
     public static void main(String[] args) {
+
+        //AbstractDemo absd = new AbstractDemo(); //we cannot have instance (object) from an abstract class = abstract class cannot be instanced
         //creating the first object from class Dog using constructor
         Dog morti = new Dog(new Breed("French Bulldog", "lazy, farts, snoring",
                 "quite a few..."),

@@ -43,4 +43,7 @@ public class Dog extends Pet {
     }
 
 
+    public void printingDogData(){
+
+    }
 }
