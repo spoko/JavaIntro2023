@@ -1,6 +1,9 @@
 package arraydemo;
 
+import java.util.LinkedList;
+
 public class ArrayDemo {
+    String [] words = null;
 
     public static void main(String[] args) {
         String text = "Some random text blah blah blah";
@@ -8,6 +11,7 @@ public class ArrayDemo {
         String [] cities = {"Sofia", "Plovdiv", "Burgas", "Varna", "Vratsa"};
         String [] words = text.split(" ");
         char[] mustHavePasswordSymbols = {'#', '%', '*'};
+
 
         int [][] matrix = {
                 {3, 5, 8},
@@ -50,6 +54,8 @@ public class ArrayDemo {
         for (int number : numbers){
             System.out.printf("Current value is: %d\n", number);
         }
+
+        System.out.println(words);
 
         System.out.println("---------------------");
         for (int i = 0; i < matrix.length; i++) {
